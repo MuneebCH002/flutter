@@ -5,17 +5,12 @@ class Homepage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var days = 30;
     return Scaffold(
       appBar: AppBar(
-        title: Text("First app"),
+        title: Text("first app"),
       ),
-      body: Center(
-        child: Container(
-          child: Text("my first app $days"),
-        ),
-      ),
-      drawer: Drawer(),
+      body: const Center(child: Text("first app")),
+      drawer: const Drawer(),
     );
   }
 }
